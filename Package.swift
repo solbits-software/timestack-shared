@@ -1,22 +1,22 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-  name: "timestack-dto",
+  name: "timestack-shared",
   platforms: [.iOS(.v15), .macOS(.v12)],
   products: [
     .library(
-      name: "TimeStackDTO",
-      targets: ["TimeStackDTO"]),
+      name: "TimeStackShared",
+      targets: ["TimeStackShared"]),
   ],
   dependencies: [],
   targets: [
     .target(
-      name: "TimeStackDTO",
+      name: "TimeStackShared",
       dependencies: []),
     .testTarget(
-      name: "TimeStackDTOTests",
-      dependencies: ["TimeStackDTO"]),
+      name: "TimeStackSharedTests",
+      dependencies: ["TimeStackShared"]),
   ])
