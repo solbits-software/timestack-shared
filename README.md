@@ -1,3 +1,3 @@
-# TimeStackDTO
+# timstack-shared
 
-A description of this package.
+This package contains data models shared between timestack iOS client and backend
