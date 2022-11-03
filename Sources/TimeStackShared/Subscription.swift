@@ -1,5 +1,4 @@
 // Copyright © 2022 Solbits Software Inc. All rights reserved.
-// Created by Cory Sullivan on 2022-08-17
 
 import Foundation
 
@@ -12,22 +11,18 @@ public struct Subscription: Codable {
 
   public init(
     id: UUID? = nil,
-    localId: Int64,
-    deviceId: UUID,
-    accountId: Int64? = nil,
-    calendarId: Int64? = nil,
-    resource: String,
+    referenceId: Int64,
     subscriptionId: String,
+    subscriptionType: SubscriptionType,
+    resource: String,
     accountType: AccountType,
     expirationDate: Date? = nil)
   {
     self.id = id
-    self.localId = localId
-    self.deviceId = deviceId
-    self.accountId = accountId
-    self.calendarId = calendarId
-    self.resource = resource
+    self.referenceId = referenceId
     self.subscriptionId = subscriptionId
+    self.subscriptionType = subscriptionType
+    self.resource = resource
     self.accountType = accountType
     self.expirationDate = expirationDate
   }
@@ -38,12 +33,10 @@ public struct Subscription: Codable {
   public var id: UUID?
 
   /// Auto generated identify from device database (SQlite)
-  public var localId: Int64
-  public var deviceId: UUID
-  public var accountId: Int64?
-  public var calendarId: Int64?
-  public var resource: String
+  public var referenceId: Int64
   public var subscriptionId: String
+  public var subscriptionType: SubscriptionType
+  public var resource: String
   public var accountType: AccountType
   public var expirationDate: Date?
 }
