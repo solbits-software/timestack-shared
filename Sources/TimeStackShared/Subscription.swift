@@ -13,7 +13,6 @@ public struct Subscription: Codable {
     id: UUID? = nil,
     referenceId: Int64,
     subscriptionId: String,
-    subscriptionType: SubscriptionType,
     resource: String,
     accountType: AccountType,
     expirationDate: Date? = nil)
@@ -21,7 +20,6 @@ public struct Subscription: Codable {
     self.id = id
     self.referenceId = referenceId
     self.subscriptionId = subscriptionId
-    self.subscriptionType = subscriptionType
     self.resource = resource
     self.accountType = accountType
     self.expirationDate = expirationDate
@@ -35,7 +33,6 @@ public struct Subscription: Codable {
   /// Auto generated identify from device database (SQlite)
   public var referenceId: Int64
   public var subscriptionId: String
-  public var subscriptionType: SubscriptionType
   public var resource: String
   public var accountType: AccountType
   public var expirationDate: Date?
