@@ -11,7 +11,7 @@ public struct Subscription: Codable {
 
   public init(
     id: UUID? = nil,
-    referenceId: Int64,
+    referenceId: String,
     subscriptionId: String,
     resource: String,
     accountType: AccountType,
@@ -31,7 +31,7 @@ public struct Subscription: Codable {
   public var id: UUID?
 
   /// Auto generated identify from device database (SQlite)
-  public var referenceId: Int64
+  public var referenceId: String
   public var subscriptionId: String
   public var resource: String
   public var accountType: AccountType
