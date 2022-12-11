@@ -7,7 +7,7 @@ public struct RefreshToken: Codable {
   public var value: String
   public var userId: UUID
 
-  public init(id: UUID, value: String, expirationDate _: Date, userId: UUID) {
+  public init(id: UUID, value: String, userId: UUID) {
     self.id = id
     self.value = value
     self.userId = userId
