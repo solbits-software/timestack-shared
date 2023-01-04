@@ -3,9 +3,9 @@
 import Foundation
 
 public struct UserInfo: Codable {
-  public let user: User
-  public let token: AccessToken
-  public let refreshToken: RefreshToken
+  public var user: User
+  public var token: AccessToken
+  public var refreshToken: RefreshToken
   public init(user: User, token: AccessToken, refreshToken: RefreshToken) {
     self.user = user
     self.token = token
