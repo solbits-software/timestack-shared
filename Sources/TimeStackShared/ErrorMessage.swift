@@ -5,8 +5,8 @@ import Foundation
 // MARK: - ErrorMessage
 
 public struct ErrorMessage: Codable {
-  let messageType: ErrorMessageType
-  let message: String
+  public let messageType: ErrorMessageType
+  public let message: String
 
   public init(messageType: ErrorMessageType, message: String) {
     self.messageType = messageType
