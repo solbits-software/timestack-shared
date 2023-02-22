@@ -1,4 +1,4 @@
-// Copyright © 2022 Solbits Software Inc. All rights reserved.
+// Copyright © 2023 Solbits Software Inc. All rights reserved.
 
 import Foundation
 
@@ -6,7 +6,7 @@ public let googleTokenId = "forwardTo=TimeStackAPi&createdBy=iOS"
 
 // MARK: - Subscription
 
-public struct Subscription: Codable {
+public struct Subscription: Codable, Sendable {
   // MARK: Lifecycle
 
   public init(

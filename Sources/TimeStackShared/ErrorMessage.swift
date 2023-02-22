@@ -4,7 +4,7 @@ import Foundation
 
 // MARK: - ErrorMessage
 
-public struct ErrorMessage: Codable {
+public struct ErrorMessage: Codable, Sendable {
   public let messageType: ErrorMessageType
   public let message: String
 
@@ -16,6 +16,6 @@ public struct ErrorMessage: Codable {
 
 // MARK: - ErrorMessageType
 
-public enum ErrorMessageType: String, Codable {
+public enum ErrorMessageType: String, Codable, Sendable {
   case paywall
 }

@@ -1,8 +1,8 @@
-// Copyright © 2022 Solbits Software Inc. All rights reserved.
+// Copyright © 2023 Solbits Software Inc. All rights reserved.
 
 import Foundation
 
-public struct UserInfo: Codable {
+public struct UserInfo: Codable, Sendable {
   public var user: User
   public var token: AccessToken
   public var refreshToken: RefreshToken

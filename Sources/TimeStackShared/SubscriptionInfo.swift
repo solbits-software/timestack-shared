@@ -1,8 +1,8 @@
-// Copyright © 2022 Solbits Software Inc. All rights reserved.
+// Copyright © 2023 Solbits Software Inc. All rights reserved.
 
 import Foundation
 
-public struct SubscriptionInfo: Codable, Hashable {
+public struct SubscriptionInfo: Codable, Hashable, Sendable {
   public let referenceId: String
   public let accountType: AccountType
 

@@ -1,8 +1,8 @@
-// Copyright © 2022 Solbits Software Inc. All rights reserved.
+// Copyright © 2023 Solbits Software Inc. All rights reserved.
 
 import Foundation
 
-public struct RefreshToken: Codable {
+public struct RefreshToken: Codable, Sendable {
   public var id: UUID
   public var value: String
   public var userId: UUID
