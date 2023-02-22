@@ -16,7 +16,7 @@ public struct UpdateDevice: Codable, Sendable {
 
 // MARK: - Device
 
-public struct Device: Codable {
+public struct Device: Codable, Sendable {
   public let id: UUID
   public var pushToken: String?
 
